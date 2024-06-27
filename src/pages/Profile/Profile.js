@@ -27,7 +27,7 @@ const Profile = () => {
     // Fetch profile data when orgId changes
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/profile/${storedOrgId}`);
+        const response = await axios.get(`https://gendernetworkethiopia-api.onrender.com/api/profile/${storedOrgId}`);
         setProfile(response.data);
         
       } catch (error) {
@@ -50,7 +50,7 @@ const Profile = () => {
     e.preventDefault(); // Prevent default form submission behavior
 
     try {
-      const response = await axios.put(`http://localhost:8000/api/profile/${orgId}`, profile); 
+      const response = await axios.put(`https://gendernetworkethiopia-api.onrender.com/api/profile/${orgId}`, profile); 
       console.log('Profile updated successfully:', profile);
       window.location.reload(); // Refresh the page
     } catch (error) {

@@ -10,7 +10,7 @@ function Cards(props) {
     const [sortRegion, setSortRegion] = useState("");
 
     useEffect(() => {
-      axios.get("http://localhost:8000/api/data")
+      axios.get("https://gendernetworkethiopia-api.onrender.com/api/data")
         .then(response => {
           setOrganizations(response.data);
         })

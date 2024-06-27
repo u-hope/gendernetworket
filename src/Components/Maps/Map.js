@@ -18,7 +18,7 @@ const Map = () => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/data').then(
+    axios.get('https://gendernetworkethiopia-api.onrender.com/api/data').then(
       lists => {
         setLists(lists.data);
       }

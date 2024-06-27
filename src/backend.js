@@ -5,7 +5,7 @@ import axios from 'axios';
 //SIGNIN
 export const signin = org => {
     // API call to sign in a user
-    return axios.post("http://localhost:8000/api/signin", JSON.stringify(org), {
+    return axios.post("https://gendernetworkethiopia-api.onrender.com/api/signin", JSON.stringify(org), {
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json"
@@ -22,7 +22,7 @@ export const signin = org => {
 //SIGNUP
 export const signup = org => {
     // API call to sign up a user
-    return axios.post("http://localhost:8000/api/signup", JSON.stringify(org),{
+    return axios.post("https://gendernetworkethiopia-api.onrender.com/api/signup", JSON.stringify(org),{
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json"
@@ -47,7 +47,7 @@ export const authenticate = (data, next) => {
 }
 //fetch all data
 export const getAllOrgs = (next)=> {
-    axios.get("http://localhost:8000/api/data")
+    axios.get("https://gendernetworkethiopia-api.onrender.com/api/data")
     .then(response => {
         console.log(response.data)
     })
@@ -58,7 +58,7 @@ export const signout = (next) => {
     if (typeof window !== "undefined") {
         localStorage.removeItem("jwt");
 
-        axios.get("http://localhost:8000/api/signout")
+        axios.get("https://gendernetworkethiopia-api.onrender.com/api/signout")
         .then(response => {
             console.log(response.data); 
             next(); 
