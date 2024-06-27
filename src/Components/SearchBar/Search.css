@@ -1,0 +1,58 @@
+.search{
+    height: 35px;
+    align-self: center;
+    float: right;
+    outline: none;
+    /* border: none; */
+    width:20vw;
+    border-radius: 4px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+.profileInput{
+    height: 40px;
+    width: 20vw;
+    border-radius: 4px;
+}
+.sortForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80px;
+    
+}
+
+.searchMain{
+    padding: 2vw;
+    padding-right: 10vw;
+    height: 3vw;
+    display: flex;
+    float: right;
+    margin: auto auto;
+    overflow: hidden;
+}
+.formGroup{
+    padding-right: 2vw;
+}
+
+/* Small Devices (Phones)  */
+@media (max-width: 767px) {
+    .searchMain {
+        padding: 2vw;
+        padding-right: 10vw;
+        height: 3vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* float: right; */
+        /* margin: auto auto; */
+        overflow: hidden;
+      }
+    .typeOfOrg{
+        display: none;
+    }
+    .sortForm{
+        display: flex;
+        /* height: 80px; */
+        
+    }
+
+}

@@ -1,0 +1,148 @@
+
+.profile-top {
+    position: relative;
+    background-image: url('../../Img/signup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #023252;
+  }
+  
+  .profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .profile-left {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  
+  .profile-right {
+    flex-basis: 65%;
+  }
+  
+  .profile-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #023252;
+  }
+  
+  .profile-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .profile-input:focus {
+    outline: none;
+    border-color: #4d90fe;
+  }
+  
+  .profile-submit-btn {
+    grid-column: 1 / -1;
+    background-color: #4d90fe;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-submit-btn:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 20px;
+    }
+  
+    .profile-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-left {
+      flex-basis: auto;
+      margin-bottom: 20px;
+    }
+  
+    .profile-right {
+      flex-basis: auto;
+    }
+  
+    .profile-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile-submit-btn {
+      grid-column: 1 / 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-header {
+      font-size: 24px;
+    }
+  
+    .profile-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .profile-input {
+      font-size: 14px;
+    }
+  
+    .profile-submit-btn {
+      font-size: 14px;
+    }
+  }
