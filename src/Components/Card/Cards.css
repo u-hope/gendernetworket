@@ -3,7 +3,7 @@
     grid-template-columns: auto auto auto;
     column-gap: 10vh;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     overflow: hidden;
 }
@@ -140,6 +140,7 @@
 @media (max-width: 767px) {
     .cardSection {
         padding: 3vh 0;
+        width: 100%;
         text-align: center;
     }
 

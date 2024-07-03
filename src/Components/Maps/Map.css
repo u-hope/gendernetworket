@@ -5,27 +5,28 @@
     position: relative;
   }
   
-  .mapLeft svg {
+svg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+  }
+.mapRegionButton{
+    text-align: center;
   }
 .map{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 5fr 2fr; 
-    background: rgb(255,255,255);
-    background: linear-gradient(205deg, rgba(255,255,255,0.02282911455597869) 43%, rgba(145,199,209,1) 77%); 
+    grid-template-columns: 5fr 3fr; 
+    background: rgb(0,133,155);
+    background: linear-gradient(113deg, #00859B 18%, rgba(255,255,255,0.02282911455597869) 76%); 
     overflow: hidden;
 }
 
 .mapRight{
     display: flex;
     padding: 3vw;
-    text-align: center;
+    text-align: left;
     float: left;
     display: grid;
     grid-template-rows: auto auto;
@@ -42,16 +43,24 @@
     grid-template-columns: 1fr 1fr;
 }
 .mapLable{
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
+    color: #00859B;
 }
 .mapRegionLable{
     display: flex;
     font-size: larger;
-    font-weight: 400;
+    font-weight: 600;
+    color: rgba(76, 115, 173, 0.514);
 }
-
-
+.mapRegionLable:hover{
+    color: #04404b;
+    cursor:default;
+}
+.mapHeader{
+    font-size: xx-large;
+    color: #00859B;
+}
 
 
 /* 
@@ -66,16 +75,13 @@
 /* Small Devices (Phones)  */
 @media (max-width: 767px) {
     .map {
-        max-height: 60vh;
-       background-image: url('../../Img/E1.png');
-       background-repeat: no-repeat;
-       background-size: 100% 100%;
+        height: 90vh;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1.5fr;
       }
-    .mapLeft{
-        display: none;
-    }
-    .mapRight{
-        display: none;
+    .svg{
+        width: 100%;
+        height: auto;
     }
 
 }

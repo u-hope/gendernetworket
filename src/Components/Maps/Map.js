@@ -1,6 +1,7 @@
 import axios from 'axios';
 import './Map.css';
 import React, { useState, useEffect } from 'react';
+import exportFromJSON from 'export-from-json';
 
 
 const Map = () => {
@@ -13,7 +14,7 @@ const Map = () => {
     setHoveredFeature({ id: featureId, name: featureName });
   };
 
-  const handleFeatureClick = (event, featureId, featureName) => {
+  const handleFeatureClick = (event, featureId, featureName) => { 
     setClickedFeature({ id: featureId, name: featureName });
   };
 
@@ -25,20 +26,31 @@ const Map = () => {
     ).catch(error => console.error('Error fetching data: ', error))
   }, []);
   var clickedName = clickedFeature.name;
+
+  const onExport=()=>{
+
+    const filteredList = lists.filter((list) =>
+      clickedName === "" ? list : list.region.includes(clickedName)
+    );
+    const transformedList = filteredList.map(({ id, encrypted_password, salt, createdAt, updatedAt, ...rest }) => rest);
+    const fileName = "download";
+    const exportType = exportFromJSON.types.csv;
+    exportFromJSON({ data: transformedList, fileName, exportType });
+  }
   return (
     <div className='map'>
       <div className='mapLeft'>
         <svg
           baseprofile="tiny"
           fill="rgba(76, 115, 173, 0.514)"
-          height="100vh"
           stroke="#ffffff"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width=".5"
           version="1.2"
-          viewbox="0 0 1000 774"
-          width="1000"
+          viewBox="0 0 1000 774"
+          width="90%"
+          height="90%"
           xmlns="http://www.w3.org/2000/svg">
 
           <g id="features">
@@ -212,18 +224,7 @@ const Map = () => {
             <circle class="Tigray" cx="421.9" cy="102.8" id="ETTI">
             </circle>
           </g>
-          {/* <text className='regionLable' x="268.4" y="568.9">SNNP</text>
-              <text className='regionLable' x="396.5" y="398.5">Addis Ababa</text>
-              <text className='regionLable' x="525.3" y="197.4">Afar</text>
-              <text className='regionLable' x="349.4" y="229.6">Amhara</text>
-              <text className='regionLable' x="201.7" y="302.7">Benishangul Gumz</text>
-              <text className='regionLable' x="585.2" y="362">Dire Dawa</text>
-              <text className='regionLable' x="128.4" y="468.8">Gambela</text>
-              <text className='oromiaRegion' x="462.9" y="487">Oromia</text>
-              <text className='regionLable' x="370.8" y="536.5">Sidama</text>
-              <text className='regionLable' x="720.9" y="522.4">Somali</text>
-              <text className='regionLable' x="421.9" y="102.8">Tigray</text> */}
-
+        
         </svg>
       </div>
       <div className='mapRight'>
@@ -251,6 +252,14 @@ const Map = () => {
             </div>
           </div>
         ))}
+        <button style={{
+          display:"flex",
+          justifyContent:"center",
+          alignItems:"center",
+          margin:"auto auto",
+          width:"40%",
+          minHeight:"5rem  "
+        }} className='mapRegionButton' onClick={onExport}>Download CSV</button>
       </div>
 
     </div>

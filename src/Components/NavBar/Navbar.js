@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import userImg from '../../Img/user.png';
 
 export default function NavBar(props){
@@ -28,7 +29,9 @@ export default function NavBar(props){
             
 
             <div className="navSocial">
-                <a href="/signup" ><img src={userImg} alt="profile" className="userImg"/></a>
+                <Link to="/signup">
+                    <img src={userImg} alt="profile" className="userImg"/>
+                </Link>
             </div>
             
         </div>
