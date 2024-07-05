@@ -23,7 +23,9 @@ export default function NavBar(props){
         <div className= {navbar ? 'navBar active' : 'navBar'}>
 
             <div className="navLogo">
-                <img src={props.logoImg} alt="Logo"/>
+                <Link to="/">
+                    <img src={props.logoImg} alt="Logo"/>
+                </Link>
             </div>
 
             

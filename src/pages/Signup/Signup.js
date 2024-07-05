@@ -1,6 +1,9 @@
 import './signup.css';
 import React, {useState} from "react";
+import NavBar from '../../Components/NavBar/Navbar';
+import logoImg from '../../Img/logo.png';
 import { signup } from "../../backend";
+import { Link } from "react-router-dom";
 
 
 // Signup component for the signup form
@@ -69,13 +72,15 @@ const successMessage = () => {
     return (
         success && (
             <div>
-                <center><p className='login_redirect mt-2'>Account created successfully <b><a href='/signin'>Login here</a></b></p></center>
+                <center><p className='login_redirect mt-2'>Account created successfully <b><Link to='/signin'>Login here</Link></b></p></center>
             </div>
         )
     );
 }
 
     return(
+        <div>
+        <NavBar logoImg={logoImg}/> 
         <div className='form-container'>
             <div className='form-box'>
                 <h2>Create an account</h2>
@@ -125,6 +130,7 @@ const successMessage = () => {
                     <button onClick={onSubmit} className='signupButton'>Signup</button>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

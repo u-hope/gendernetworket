@@ -1,133 +1,136 @@
 import './Card.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import Pagination from '../Pagination/Pagination';
 
 function Cards(props) {
-    const [organizations, setOrganizations] = useState([]);
-    const [search, setSearch] = useState("");
-    const [sortBy, setSortBy] = useState(""); 
-    const [sortRegion, setSortRegion] = useState("");
+  const [organizations, setOrganizations] = useState([]);
+  const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState("");
+  const [emptySearch, setEmptySearch] = useState("");
 
-    useEffect(() => {
+  useEffect(() => {
       axios.get("https://gendernetworkethiopia-api.onrender.com/api/data")
-        .then(response => {
-          setOrganizations(response.data);
-        })
-        .catch(error => console.error('Error fetching notes:', error));
-    }, []);
-  
-    const handleSearch = (event) => {
+          .then(response => {
+              setOrganizations(response.data);
+          })
+          .catch(error => console.error('Error fetching notes:', error));
+  }, []);
+
+  const handleSearch = (event) => {
       setSearch(event.target.value.toLowerCase());
-    };
-  
-    const handleSort = (event) => {
+  };
+
+  const handleSort = (event) => {
       setSortBy(event.target.value);
-    };
-    const handleRegionSort = (event)=> {
-        setSortRegion(event.target.value)
-    }
-  
-    const [currentPage, setCurrentPage] = useState(1);
-    const [recordsPerPage, setRecordsPerPage] = useState(6);
-  
-    const filteredOrganizations = organizations.filter(organization =>
+  };
+  const handleRegionSort = (event) => {
+      setEmptySearch(event.target.value)
+  }
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recordsPerPage, setRecordsPerPage] = useState(6);
+
+  const filteredOrganizations = organizations.filter(organization =>
       organization.name.toLowerCase().includes(search)
-    );
-  
-    const sortedOrganizations = filteredOrganizations.sort((a, b) => {
+  );
+
+  const sortedOrganizations = filteredOrganizations.sort((a, b) => {
       if (sortBy === "name") {
-        return a.name.localeCompare(b.name);
+          return a.name.localeCompare(b.name);
       } else if (sortBy === "region") {
-        return a.region.localeCompare(b.region);
+          return a.region.localeCompare(b.region);
       }
       return 0;
-    });
+  });
 
-    
-  
-    const lastIndex = currentPage * recordsPerPage;
-    const firstIndex = lastIndex - recordsPerPage;
-    const records = sortedOrganizations.slice(firstIndex, lastIndex);
-  
-    return (
-      <div>
-        <h1 className='cardSectionTitle'>Organizations</h1>
-        <div className='searchSortContainer'>
-          <div className='searchMain'>
-          <select
-              className="profileInput"
-              name="sort"
-              placeholder="Sort By"
-              onChange={handleSort}
-            >
-              <option value="">Government</option>
-              <option value="name">Private</option>
-              <option value="region">Non Profit</option>
-            </select>
+  const lastIndex = currentPage * recordsPerPage;
+  const firstIndex = lastIndex - recordsPerPage;
+  const records = sortedOrganizations.slice(firstIndex, lastIndex);
 
-            <input
-              type='text'
-              className='search'
-              placeholder='Search Organization Name'
-              onChange={handleSearch}
-              value={search}
-            />
-           
+  return (
+      <div className='cardContainerSpace'>
+          <h1 className='cardSectionTitle' style={{fontSize:"5vh", fontWeight:"750",color:" rgb(0,133,155)"}}>
+              Organizations
+          </h1>
+          <div className='searchSortContainer'>
+              <div className='searchMain'>
+                  <select
+                      className="profileInput"
+                      name="sort"
+                      placeholder="Sort By"
+                      onChange={handleSort}
+                  >
+                      <option value="">Government</option>
+                      <option value="name">Private</option>
+                      <option value="region">Non Profit</option>
+                  </select>
+
+                  <input
+                      type='text'
+                      className='search'
+                      placeholder='Search Organization Name'
+                      onChange={handleSearch}
+                      value={search}
+                  />
+              </div>
           </div>
-        </div>
-  
-        <div className='cardSection'>
-          {records.map(organization => (
-            <div className='cardContainer' key={organization.id}>
-              
-            <div className='cardLeft'>
-              <img src={props.cardImg} alt='Logo' className='cardImg' />
-            </div>
 
-            <div className='cardRight'>
+          <div className='cardSection'>
+              {filteredOrganizations.length > 0 ? (
+                  records.map(organization => (
+                      <div className="cardContainer" key={organization.id}>
+                          <div className='cardLeft'>
+                              <img src={props.cardImg} alt='Logo' className='cardImg' />
+                          </div>
 
-              <div className='cardName'>
-                <span className='cardLable'>Name:</span>
-                <span className='cardText'>{organization.name}</span>
-              </div>
+                          <div className='cardRight'>
+                              <div className='cardName'>
+                                  <span className='cardLable'>Name:</span>
+                                  <span className='cardText'>{organization.name}</span>
+                              </div>
 
+                              <div className='cardBottom'>
+                                  <div className='cardName'>
+                                      <span className='cardLable'>Email:</span>
+                                      <span className='cardText'>{organization.email}</span>
+                                  </div>
+                                  <div className='cardName'>
+                                      <span className='cardLable'>Region:</span>
+                                      <span className='cardText'>{organization.region}</span>
+                                  </div>
+                              </div>
+                              <div className='cardExpanded'>
+                                  <div className='cardHomeName'>
+                                      <span className='cardLable'>Mission:</span>
+                                      <span className='cardMission'>{organization.mission}</span>
+                                  </div>
+                                  <div className='cardHoverName'>
+                                      <span className='cardLable'>Vision:</span>
+                                      <span className='cardMission'>{organization.vision}</span>
+                                  </div>
+                                  <div className='tag'>Region:<span> {organization.region}</span> Contact: <span>{organization.contact}</span></div>
+                              </div>
+                          </div>
+                      </div>
+                  ))
+              ) : (
+                  <div style={{color:"red", fontSize:"2.5rem",fontWeight:"700", marginTop:"2rem"}}>
+                      No organization is registered with the name :  
+                      <span style={{ textShadow: "1px -3px 3px rgba(0,0,0,0.6)"}}>
+                          &nbsp; {search}
+                      </span>
+                  </div>
+              )}
+          </div>
 
-              <div className='cardBottom'>
-                <div className='cardName'>
-                  <span className='cardLable'>Email:</span>
-                  <span className='cardText'>{organization.email}</span>
-                </div>
-                <div className='cardName'>
-                  <span className='cardLable'>Region:</span>
-                  <span className='cardText'>{organization.region}</span>
-                </div>
-              </div>
-              <div className='cardExpanded'>
-              <div className='cardHomeName'>
-                  <span className='cardLable'>Mission:</span>
-                  <span className='cardMission'>{organization.mission}</span>
-                </div>
-                <div className='cardHoverName'>
-                  <span className='cardLable'>Vision:</span>
-                  <span className='cardMission'>{organization.vision}</span>
-                </div>
-                <div className='tag'>Region:<span> {organization.region}</span> Contact: <span>{organization.contact}</span></div>
-              </div>
-            </div>
-
-
-            </div>
-          ))}
-        </div>
-  
-        <Pagination
-          totalRecords={filteredOrganizations.length}
-          recordsPerPage={recordsPerPage}
-          setCurrentPage={setCurrentPage}
-        />
+          <Pagination
+              totalRecords={filteredOrganizations.length}
+              recordsPerPage={recordsPerPage}
+              setCurrentPage={setCurrentPage}
+          />
       </div>
-    );
-  }
-  
-  export default Cards;
+  );
+}
+
+export default Cards;

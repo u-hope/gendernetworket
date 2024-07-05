@@ -1,0 +1,45 @@
+
+.headerContainer{
+    /* background-image: url("../../Img/mask.png");
+    background-repeat: no-repeat;
+    background-position: center; */
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    justify-content: 'start';
+    align-items: 'end';
+}
+.one{
+    width: 60vw;
+    height: 50vw;
+    display: grid;
+    place-self: center;
+}
+.two{
+    width: 100%;
+
+}
+
+
+.three{
+   
+    /* height: 100%;
+    width: 100%; */
+
+}
+.four{
+    
+    /* height: 100%;
+    width: 100%; */
+
+}
+.five{
+    
+    /* height: 100%;
+    width: 100%; */
+    display: grid;
+    justify-self: 'start';
+    align-self: 'end';
+
+}

@@ -4,6 +4,7 @@ import Home from './pages/Home/home';
 import Signin from './pages/Signin/Signin';
 import Signup from './pages/Signup/Signup';
 import Profile from './pages/Profile/Profile';
+import NotFoundPage from './Components/PageNotFound/PageNotFound';
 
 
 
@@ -21,6 +22,8 @@ function App() {
           <Route exact path='/signup' element={<Signup/>} />
 
           <Route exact path='/profile' element={<Profile/>} />
+
+          <Route path="*" element={<NotFoundPage />} />
           
           {/* <Route exact path='/profile' element={<Profile userId={userId}/>}/> */}
         </Routes>

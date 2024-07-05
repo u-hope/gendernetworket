@@ -3,6 +3,8 @@ import axios from 'axios';
 import './profile.css';
 import profileImg from '../../Img/logo.png';
 import { useParams } from 'react-router-dom';
+import NavBar from '../../Components/NavBar/Navbar';
+import logoImg from '../../Img/logo.png'
 
 const Profile = () => {
   const [profile, setProfile] = useState({
@@ -59,6 +61,8 @@ const Profile = () => {
     }
   };
   return (
+    <>
+    <NavBar logoImg={logoImg}/>
     <div className="profile-top">
     <div className="profile-container">
       <h1 className="profile-header">Profile</h1>
@@ -169,6 +173,7 @@ const Profile = () => {
       </div>
     </div>
     </div>
+    </>
   );
 };
 
