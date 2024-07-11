@@ -7,7 +7,7 @@
     background-size: 80vw 100vh;
     background-repeat: no-repeat;
     clip-path: ellipse(98% 51% at 47% 38%);
-
+    scroll-snap-align: start;
 
 }
 

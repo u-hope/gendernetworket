@@ -1,4 +1,5 @@
 .sliderTop{
+    scroll-snap-align: start; 
     display: flex;
     border-radius: 8px; background-image: linear-gradient(to top, #00859b, #5597b2, #84a9c4, #acbdd3, #ced2e0, #ced2e0, #ced2e0, #ced2e0, #acbdd3, #84a9c4, #5597b2, #00859b); 
 }

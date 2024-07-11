@@ -11,7 +11,9 @@ import Slider from '../../Components/Slider/Slider';
 
 const Home =() => {
     return(
-        <div>
+        <div style={{
+            height:"100vh",scrollSnapType:"y proximity",overflowY:"scroll"
+        }}>
             <NavBar logoImg={logoImg}/>
             <Header/>
             <About/>

@@ -1,7 +1,7 @@
 
 .cardContainerSpace{
-    background-image: linear-gradient(to top, #00859b, #5597b2, #84a9c4, #acbdd3, #ced2e0, #ced2e0, #ced2e0, #ced2e0, #acbdd3, #84a9c4, #5597b2, #00859b);
-}
+    scroll-snap-align: start; 
+    background-image: linear-gradient(to top, #00859b, #009bb093, #00b0c45d, #00ffee27, #00ffee00, #00ffee00, #00ffee00, #00ffee00, #00ffee27, #00b0c45d, #009bb093, #00859b);}
 .cardSection {
     display: grid;
     grid-template-columns: auto auto auto;

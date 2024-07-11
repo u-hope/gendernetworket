@@ -230,6 +230,7 @@ const Map = () => {
       <div className='mapRight'>
 
         <h2 className='mapHeader' style={{margin:"auto auto"}}> {clickedFeature.name}</h2>
+        <div className='mapClicked'>
         {lists.filter((list) => {
           return clickedName === '' ? list : list.region.includes(clickedName);
         }).map(list => (
@@ -252,6 +253,7 @@ const Map = () => {
             </div>
           </div>
         ))}
+        </div>
         <button style={{
           display:"flex",
           justifyContent:"center",
