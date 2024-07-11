@@ -1,0 +1,129 @@
+.about_main{
+    /* background-color: #a8fcff; */
+    width: 100%;
+    height:150vh;
+    transform: translateZ(0);
+    /* position: relative; */
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+}
+.about_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* top:1vh; */
+}
+.about_title{
+    padding-bottom: 2.5vw;
+    font-weight: 700;
+    font-size: 3.4vh;
+}
+.about_body{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 3vh;
+}
+.about_bottom{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    text-align: center;
+}
+.aboutContainer{
+    display: flex;
+    width: 80vw;
+    height: 1vh;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+
+}
+.aboutImg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+}
+.aboutImg p{
+    font-size: 4vh;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    color: #ffffff;
+    backdrop-filter: blur(12px);
+
+}
+.aboutImg.active{
+    flex: 5;
+}
+.aboutImg.active p{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.One{
+    background-image: url('../../Img/a1.png');
+   
+    
+}
+.Two{
+    background-image: url('../../Img/a2.png');
+    
+   
+    
+}
+.Three{
+    background-image: url('../../Img/a3.png');
+   
+    
+}
+.Four{
+    background-image: url('../../Img/a4.png');
+   
+    
+}
+.Five{
+    background-image: url('../../Img/a5.png');
+   
+    
+}
+#about{
+    color: transparent;
+}
+#aboutanim {
+    color: red;
+    font-size: large; 
+    animation-name:entry;
+    animation-duration:1.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entry{
+    0% {
+		transform: scale(0.3);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 720px) {
+    .aboutContainer{
+        width: 100%;
+    }
+    .aboutImg:nth-of-type(4),
+    .aboutImg:nth-of-type(5) {
+        display: none;
+    }
+}

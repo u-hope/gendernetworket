@@ -1,0 +1,19 @@
+.parallex_main{
+    /* background-color: #163839; */
+    height:60vh;
+    top: 100vh;
+    background-image: url('../../Img/genderImg.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+}
+.parallex_bottom{
+    height: 100%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

@@ -39,3 +39,9 @@
 .spanPhone{
     color: aliceblue;
 }
+
+@media (max-width: 767px) {
+    .contactLeft img{
+        display: none;
+    }
+}

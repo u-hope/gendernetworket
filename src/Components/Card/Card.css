@@ -1,9 +1,13 @@
+
+.cardContainerSpace{
+    background-image: linear-gradient(to top, #00859b, #5597b2, #84a9c4, #acbdd3, #ced2e0, #ced2e0, #ced2e0, #ced2e0, #acbdd3, #84a9c4, #5597b2, #00859b);
+}
 .cardSection {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10vh;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     overflow: hidden;
 }
@@ -16,6 +20,7 @@
 
 .cardSectionTitle {
     text-align: center;
+    margin:  0 0;
 }
 .searchMain{
     display: flex;
@@ -112,7 +117,6 @@
 .cardText {
     padding-left: 1px;
 }
-
 .cardLable {
     font-size: large;
     font-weight: 600;

@@ -32,7 +32,7 @@
 .headerTopText{
     color: #10c7ff;
     font-weight: 900;
-    font-size:xx-large;
+    font-size:3.5vh;
     margin-bottom: 2vh;
 }
 .headerButton {
@@ -87,21 +87,28 @@
 /* Small Devices (Phones) */
 @media (max-width: 767px) {
     .header{ 
-        font-size: 1.2rem;
-        height: 50vh;
+        font-size: 2vh;
+        height: 60vh;
         width: 100vw;
+        grid-template-columns: 1fr;
         overflow: hidden;
         background-image: url('../../Img/one.png');
         background-size: 100vw 50vh;
         background-repeat: no-repeat;}
     .headerText {
-        font-size: 1.2rem;
+        font-size: 2vh;
         margin: auto auto;
+    }
+    .headerLeft{
+        margin-top: -2.4vh;
+        background-color: rgba(58, 40, 40, 0.158);
+        backdrop-filter: blur(1px );
     }
 
     .headerButton {
-        height: 5vh;
-        width: 40vw;
-        padding-top: 2.5vh;
+        height: 3vh;
+        width: 30vw;
+        padding: 2vh;
+        margin-left: 0;
     }
 }
