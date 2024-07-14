@@ -1,17 +1,17 @@
 .sliderTop{
     scroll-snap-align: start; 
     display: flex;
-    border-radius: 8px; background-image: linear-gradient(to top, #00859b, #5597b2, #84a9c4, #acbdd3, #ced2e0, #ced2e0, #ced2e0, #ced2e0, #acbdd3, #84a9c4, #5597b2, #00859b); 
+    border-radius: 8px; 
+    /* background-image: linear-gradient(to top, #00859b, #5597b2, #84a9c4, #acbdd3, #ced2e0, #ced2e0, #ced2e0, #ced2e0, #acbdd3, #84a9c4, #5597b2, #00859b);  */
 }
 .sliderContainer {
     width: 25em;
-    height: 40vh;
     margin: 2em auto;
     overflow: hidden;
     background: transparent;
     position: relative;
     border-radius: 8px;
-    height: 80vh;
+    height: 60vh;
 }
 
 .slider {

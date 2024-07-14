@@ -50,7 +50,7 @@ function Cards(props) {
 
   return (
       <div className='cardContainerSpace'>
-          <h1 className='cardSectionTitle' style={{fontSize:"5vh", fontWeight:"750",color:" #fff"}}>
+          <h1 className='cardSectionTitle' style={{fontSize:"5vh", fontWeight:"750",color:" #fff",textAlign:"left"}}>
               Organizations
           </h1>
           <div className='searchSortContainer'>
@@ -115,9 +115,9 @@ function Cards(props) {
                       </div>
                   ))
               ) : (
-                  <div style={{color:"red", fontSize:"2.5rem",fontWeight:"700", marginTop:"2rem"}}>
+                  <div style={{color:"black", fontSize:"5vh",fontWeight:"700", margin:"auto auto"}}>
                       No organization is registered with the name :  
-                      <span style={{ textShadow: "1px -3px 3px rgba(0,0,0,0.6)"}}>
+                      <span style={{ color:"red"}}>
                           &nbsp; {search}
                       </span>
                   </div>

@@ -117,7 +117,7 @@ const successMessage = () => {
                     <input type="text" id="name" name="orgtype" onChange={handleChange("orgtype")} required/>
                 </div>
                 <div className='form-group'>
-                    <label htmlFor="intervention">Area of Experties</label>
+                    <label htmlFor="intervention">Area of Expertise </label>
                     <input type="text" id="name" name="intervention" onChange={handleChange("intervention")} required/>
                 </div>
                 {/* Input field for password */}
@@ -127,7 +127,7 @@ const successMessage = () => {
                 </div>
                 {/* Signup button */}
                 <div className="form-group-button">
-                    <button onClick={onSubmit} className='signupButton'>Signup</button>
+                    <button onClick={onSubmit} className='signupButton'>Sign up</button>
                 </div>
             </div>
         </div>

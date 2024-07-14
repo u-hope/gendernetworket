@@ -31,7 +31,7 @@ export default function NavBar(props){
             
 
             <div className="navSocial">
-                <Link to="/signup">
+                <Link to="/signin">
                     <img src={userImg} alt="profile" className="userImg"/>
                 </Link>
             </div>

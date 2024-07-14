@@ -2,6 +2,7 @@
     display: block;
     justify-content: center;
     text-align: center;
+    padding-bottom: 3vh;
 }
 .paginationButton{
   background-color: #172730;

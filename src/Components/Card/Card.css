@@ -1,7 +1,10 @@
 
-.cardContainerSpace{
+.cardContainerSpace{ 
     scroll-snap-align: start; 
-    background-image: linear-gradient(to top, #00859b, #009bb093, #00b0c45d, #00ffee27, #00ffee00, #00ffee00, #00ffee00, #00ffee00, #00ffee27, #00b0c45d, #009bb093, #00859b);}
+    background:url("../../Img/card_background.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .cardSection {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -19,7 +22,7 @@
 }
 
 .cardSectionTitle {
-    text-align: center;
+    text-align: left;
     margin:  0 0;
 }
 .searchMain{

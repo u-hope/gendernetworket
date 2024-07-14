@@ -261,7 +261,7 @@ const Map = () => {
           margin:"auto auto",
           width:"40%",
           minHeight:"5rem  "
-        }} className='mapRegionButton' onClick={onExport}>Download CSV</button>
+        }} className='mapRegionButton' onClick={onExport}>Download File</button>
       </div>
 
     </div>

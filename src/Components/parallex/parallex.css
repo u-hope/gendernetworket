@@ -6,14 +6,18 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 40vh;
     width: 100%;
+    scroll-snap-align: start; 
 }
 .parallex_bottom{
     height: 100%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+.header_motto{
+    color:#00859B;
 }
