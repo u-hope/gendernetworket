@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
     background-image: url('../../Img/one.png');
-    background-size: 80vw 100vh;
+    background-size: 95vw 100vh;
     background-repeat: no-repeat;
     clip-path: ellipse(98% 51% at 47% 38%);
     scroll-snap-align: start;
@@ -97,6 +97,7 @@
         background-image: url('../../Img/one.png');
         background-size: 100vw 50vh;
         background-repeat: no-repeat;}
+
     .headerText {
         font-size: 2vh;
         margin: auto auto;
