@@ -42,7 +42,7 @@ const Map = () => {
       <div className='mapLeft'>
         <svg
           baseprofile="tiny"
-          fill="rgba(76, 115, 173, 0.514)"
+          fill="rgb(76, 115, 173)"
           stroke="#ffffff"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -62,7 +62,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETSN', 'SNNP')}
               style={{
-                fill: hoveredFeature?.id === 'ETSN' ? 'yellow' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETSN' ? 'yellow' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -73,7 +73,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETAA', 'Addis Ababa')}
               style={{
-                fill: hoveredFeature?.id === 'ETAA' ? 'purple' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETAA' ? 'purple' : 'rgb(76, 115, 173)',
               }}
 
             >
@@ -85,7 +85,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETAF', 'Afar')}
               style={{
-                fill: hoveredFeature?.id === 'ETAF' ? 'darkorange' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETAF' ? 'darkorange' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -96,7 +96,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETAM', 'Amhara')}
               style={{
-                fill: hoveredFeature?.id === 'ETAM' ? 'rgb(76, 76, 168)' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETAM' ? 'rgb(76, 76, 168)' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -107,7 +107,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETBE', 'Benishangul Gumz')}
               style={{
-                fill: hoveredFeature?.id === 'ETBE' ? 'orange' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETBE' ? 'orange' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -118,7 +118,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETDD', 'Dire Dawa')}
               style={{
-                fill: hoveredFeature?.id === 'ETDD' ? 'pink' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETDD' ? 'pink' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -129,7 +129,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETGA', 'Gambela')}
               style={{
-                fill: hoveredFeature?.id === 'ETGA' ? 'darkorange' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETGA' ? 'darkorange' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -140,7 +140,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETHA', 'Harari')}
               style={{
-                fill: hoveredFeature?.id === 'ETHA' ? 'yellow' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETHA' ? 'yellow' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -151,7 +151,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETOR', 'Oromia')}
               style={{
-                fill: hoveredFeature?.id === 'ETOR' ? 'Green' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETOR' ? 'Green' : 'rgb(76, 115, 173)',
 
               }}
             >
@@ -163,7 +163,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETSI', 'Sidama')}
               style={{
-                fill: hoveredFeature?.id === 'ETSI' ? 'purple' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETSI' ? 'purple' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -174,7 +174,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETSO', 'Somali')}
               style={{
-                fill: hoveredFeature?.id === 'ETSO' ? 'purple' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETSO' ? 'purple' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
@@ -185,7 +185,7 @@ const Map = () => {
               onMouseLeave={(event) => setHoveredFeature(null)}
               onClick={(event) => handleFeatureClick(event, 'ETTI', 'Tigray')}
               style={{
-                fill: hoveredFeature?.id === 'ETTI' ? 'Green' : 'rgba(76, 115, 173, 0.514)',
+                fill: hoveredFeature?.id === 'ETTI' ? 'Green' : 'rgb(76, 115, 173)',
               }}
             >
             </path>
