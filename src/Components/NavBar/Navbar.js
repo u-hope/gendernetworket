@@ -31,8 +31,9 @@ export default function NavBar(props){
             
 
             <div className="navSocial">
-                <Link to="/signin">
+                <Link to="/signin" style={{display:"flex",flexDirection:"column",textDecoration:"none"}}>
                     <img src={userImg} alt="profile" className="userImg"/>
+                    <span style={{color:"#5c5c5c",padding:"1px" }}>Profile</span>
                 </Link>
             </div>
             
