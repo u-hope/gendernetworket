@@ -43,7 +43,7 @@ function About(props) {
     <div className="about_main">
       <div className="about_top">
         <div className="about_title" style={{color:"#00859B"}}>About Us</div>
-        <div className="about_body" style={{textAlign:"center",color:"rgba(76, 115, 173, 0.514)"}}>
+        <div className="about_body" style={{textAlign:"center",color:"#5c5c5c"}}>
         {/* We work to increase the visibility and awareness of gender equality issues while elevating the voices of underrepresented communities. We do this by facilitating networking and collaboration between a wide range of organizations, NGOs, and advocates in order to foster synergies and collective action. We also support grassroots movements in influencing policy and driving systemic change through strategic advocacy efforts. By making essential resources, educational materials, and empowering tools easily accessible, we empower individuals and strengthen the capacity of gender equality champions.  */}
         In order to create synergies and collective action, we facilitate collaboration and networking between a diverse range of organizations, NGOs, and advocates. We also support grassroots movements in influencing policy and driving systemic change through strategic advocacy efforts. Our mission is to increase visibility and awareness of gender equality issues, amplifying the voices of underrepresented communities.
         </div>

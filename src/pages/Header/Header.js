@@ -9,8 +9,17 @@ const Header = () => {
             </div>
             <div className='headerLeft'> 
 
-                <span className='headerTopText'>Empowering organizations <br/>working on gender-related<br/> issues worldwide</span>       
-                <span className='headerText'>Equal Representation, Equal Society.</span>
+                <span className='headerTopText'>
+                    We believe in fostering a diverse and inclusive
+                    <br/> community where individuals of all gender can 
+                    <br/> connect, collaborate and thrive. Together, let's 
+                    <br/> break barriers and create a more equitable
+                    <br/> future.
+                </span>       
+                
+                <span className='headerText'>
+                    Equal Representation, Equal Society.
+                </span>
                 <Link to="/signup" className="headerButton">
                     Register with us
                 </Link>
