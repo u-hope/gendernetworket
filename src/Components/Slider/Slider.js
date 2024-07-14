@@ -42,79 +42,49 @@ const Slider = ()=>{
     return(
         <div className='sliderTop'>
 
-<div className='sliderContainer'>
-            <ul class="slider blur">
-                <li>
-                    <CardSlide name={"Giz"} img={img}/>
-                    <CardSlide name={"Ministry of Agriculture"} img={agriculture}/>
-                    <CardSlide name={"Ethiopian agriculture Ministry"} img={aor}/>
-                    <CardSlide name={"Agriculture Transformation Agency"} img={ata}/>
-                    <CardSlide name={"Care Ethiopia"} img={care}/>
-                    <CardSlide name={"EGPA"} img={egpa}/>
-                    <CardSlide name={"Giz"} img={img}/>
-                    <CardSlide name={"Ministry of Agriculture"} img={agriculture}/>
-                    <CardSlide name={"Ethiopian agriculture Ministry"} img={aor}/>
-                    <CardSlide name={"Agriculture Transformation Agency"} img={ata}/>
-                    <CardSlide name={"Care Ethiopia"} img={care}/>
-                    <CardSlide name={"EGPA"} img={egpa}/>  
-                    <CardSlide name={"Giz"} img={img}/>
-                    <CardSlide name={"Ministry of Agriculture"} img={agriculture}/>
-                    <CardSlide name={"Ethiopian agriculture Ministry"} img={aor}/>
-                    <CardSlide name={"Agriculture Transformation Agency"} img={ata}/>
-                    <CardSlide name={"Care Ethiopia"} img={care}/>
-                    <CardSlide name={"EGPA"} img={egpa}/>  
-                </li>
-                
-            </ul>
+
+
+        <div className='sliderContainer top' >
+                <CardSlide name={"Giz"} img={img}/>
+                <CardSlide name={"Ministry of Agriculture"} img={agriculture}/>
+                <CardSlide name={"Ethiopian agriculture Ministry"} img={aor}/>
+                <CardSlide name={"Agriculture Transformation Agency"} img={ata}/>
+                <CardSlide name={"Care Ethiopia"} img={care}/>
+                <CardSlide name={"EGPA"} img={egpa}/>  
+                <CardSlide name={"Gender Action"} img={genderland}/>
+                <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
+                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
+                <CardSlide name={"MSI"} img={msi}/>
+                <CardSlide name={"Ministry of Peace"} img={peace}/>
+                <CardSlide name={"United Nation"} img={un}/>
+                <CardSlide name={"United Nation Women Ethiopia"} img={un_min}/>
+                <CardSlide name={"Ministry of Women, Children and Youth"} img={gen}/>
+                <CardSlide name={"WOMEN"} img={wom}/>
+                <CardSlide name={"Women and Child walefare and developemnt"} img={womeb}/>
+                <CardSlide name={"Women's Digital Financial Inclution"} img={womendigital}/>
+                <CardSlide name={"Ministry of women and Social Affairs"} img={womn}/>
+                <CardSlide name={"USAID"} img={usaid}/>
+                <CardSlide name={"International Growth Center"} img={igc}/>
+                <CardSlide name={"Maristops Ethiopia"} img={maristops}/>
+              
         </div>
-
-
-        <div className='sliderContainer'>
-            <ul class="slider blur">
-               
-                <CardSlide name={"Ministry of Women, Children and Youth"} img={gen}/>
-                <CardSlide name={"Gender Action"} img={genderland}/>
-                <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
-                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
-                <CardSlide name={"MSI"} img={msi}/>
-                <CardSlide name={"Ministry of Peace"} img={peace}/>
-                <CardSlide name={"United Nation"} img={un}/>
-                <CardSlide name={"United Nation Women Ethiopia"} img={un_min}/>
-                <CardSlide name={"Ministry of Women, Children and Youth"} img={gen}/>
-                <CardSlide name={"Gender Action"} img={genderland}/>
-                <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
-                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
-                <CardSlide name={"MSI"} img={msi}/>
-                <CardSlide name={"Ministry of Peace"} img={peace}/>
-                <CardSlide name={"United Nation"} img={un}/>
-                <CardSlide name={"United Nation Women Ethiopia"} img={un_min}/>
-                <CardSlide name={"Ministry of Women, Children and Youth"} img={gen}/>
-                <CardSlide name={"Gender Action"} img={genderland}/>
-                <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
-                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
-                <CardSlide name={"MSI"} img={msi}/>
-                <CardSlide name={"Ministry of Peace"} img={peace}/>
-                <CardSlide name={"United Nation"} img={un}/>
-                <CardSlide name={"United Nation Women Ethiopia"} img={un_min}/>
-                <CardSlide name={"Ministry of Women, Children and Youth"} img={gen}/>
-                <CardSlide name={"Gender Action"} img={genderland}/>
-                <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
-                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
-                <CardSlide name={"MSI"} img={msi}/>
-                <CardSlide name={"Ministry of Peace"} img={peace}/>
-                <CardSlide name={"United Nation"} img={un}/>
-                <CardSlide name={"United Nation Women Ethiopia"} img={un_min}/>
-            </ul>
-
-            
-        </div>
-
-
         
 
-        <div className='sliderContainer'>
-            <ul class="slider blur">
-               
+        <div className='sliderContainer bottom'>  
+        <CardSlide name={"Giz"} img={img}/>
+                <CardSlide name={"Ministry of Agriculture"} img={agriculture}/>
+                <CardSlide name={"Ethiopian agriculture Ministry"} img={aor}/>
+                <CardSlide name={"Agriculture Transformation Agency"} img={ata}/>
+                <CardSlide name={"Care Ethiopia"} img={care}/>
+                <CardSlide name={"EGPA"} img={egpa}/>  
+                <CardSlide name={"Gender Action"} img={genderland}/>
+                <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
+                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
+                <CardSlide name={"MSI"} img={msi}/>
+                <CardSlide name={"Ministry of Peace"} img={peace}/>
+                <CardSlide name={"United Nation"} img={un}/>
+                <CardSlide name={"United Nation Women Ethiopia"} img={un_min}/>
+                <CardSlide name={"Ministry of Women, Children and Youth"} img={gen}/>
                 <CardSlide name={"WOMEN"} img={wom}/>
                 <CardSlide name={"Women and Child walefare and developemnt"} img={womeb}/>
                 <CardSlide name={"Women's Digital Financial Inclution"} img={womendigital}/>
@@ -122,21 +92,7 @@ const Slider = ()=>{
                 <CardSlide name={"USAID"} img={usaid}/>
                 <CardSlide name={"International Growth Center"} img={igc}/>
                 <CardSlide name={"Maristops Ethiopia"} img={maristops}/>
-                <CardSlide name={"WOMEN"} img={wom}/>
-                <CardSlide name={"Women and Child walefare and developemnt"} img={womeb}/>
-                <CardSlide name={"Women's Digital Financial Inclution"} img={womendigital}/>
-                <CardSlide name={"Ministry of women and Social Affairs"} img={womn}/>
-                <CardSlide name={"USAID"} img={usaid}/>
-                <CardSlide name={"International Growth Center"} img={igc}/>
-                <CardSlide name={"Maristops Ethiopia"} img={maristops}/>
-                <CardSlide name={"WOMEN"} img={wom}/>
-                <CardSlide name={"Women and Child walefare and developemnt"} img={womeb}/>
-                <CardSlide name={"Women's Digital Financial Inclution"} img={womendigital}/>
-                <CardSlide name={"Ministry of women and Social Affairs"} img={womn}/>
-                <CardSlide name={"USAID"} img={usaid}/>
-                <CardSlide name={"International Growth Center"} img={igc}/>
-                <CardSlide name={"Maristops Ethiopia"} img={maristops}/>
-            </ul>
+                
         </div>
 
 

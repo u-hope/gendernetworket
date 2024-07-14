@@ -1,6 +1,6 @@
 import Map from '../../Components/Maps/Map';
 import NavBar from '../../Components/NavBar/Navbar';
-import logoImg from '../../Img/logo.png';
+import logoImg from '../../Img/home.png';
 import Header from '../Header/Header';
 import About from '../about/about';
 import Parallex from '../../Components/parallex/parallex';

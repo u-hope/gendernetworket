@@ -50,7 +50,7 @@ function Cards(props) {
 
   return (
       <div className='cardContainerSpace'>
-          <h1 className='cardSectionTitle' style={{fontSize:"5vh", fontWeight:"750",color:" #00859B",textAlign:"left"}}>
+          <h1 className='cardSectionTitle' style={{fontSize:"5vh", fontWeight:"750",color:" #00859B"}}>
               Organizations
           </h1>
           <div className='searchSortContainer'>
@@ -109,7 +109,13 @@ function Cards(props) {
                                       <span className='cardLable'>Vision:</span>
                                       <span className='cardMission'>{organization.vision}</span>
                                   </div>
-                                  <div className='tag'>Region:<span> {organization.region}</span> Contact: <span>{organization.contact}</span></div>
+                                  <div className='tag' style={{textAlign:"left"}}>
+                                    Region:<span> {organization.region}</span> 
+                                    <br/>
+                                    Contact: <span>{organization.contact}</span>
+                                    <br/>
+                                    Email: <a>{organization.email}</a>
+                                 </div>
                               </div>
                           </div>
                       </div>

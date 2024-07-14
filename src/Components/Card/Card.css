@@ -22,7 +22,7 @@
 }
 
 .cardSectionTitle {
-    text-align: left;
+    text-align: right;
     margin:  0 0;
 }
 .searchMain{
@@ -59,7 +59,7 @@
     background-color: #91C7D1;
     width: 25vw;
     height: 25vh;
-    padding: 2vw;
+    padding: 1.5vw;
     border-radius: 8px;
     box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     -webkit-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
@@ -86,14 +86,13 @@
 
 .tag {
     text-align: center;
-    padding: 1vw;
     color: #172730;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .tag span {
     color: white;
-    font-size: medium;
+    font-size: large;
 }
 
 .cardLeft {

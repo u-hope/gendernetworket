@@ -259,8 +259,9 @@ const Map = () => {
           justifyContent:"center",
           alignItems:"center",
           margin:"auto auto",
-          width:"40%",
-          minHeight:"5rem  "
+          height: "7vh",
+          width: "12vw",
+          fontSize:"2vh"
         }} className='mapRegionButton' onClick={onExport}>Download File</button>
       </div>
 
