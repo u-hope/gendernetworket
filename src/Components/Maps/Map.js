@@ -49,8 +49,8 @@ const Map = () => {
           stroke-width=".5"
           version="1.2"
           viewBox="0 0 1000 774"
-          width="90%"
-          height="90%"
+          width="100%"
+          height="100%"
           xmlns="http://www.w3.org/2000/svg">
 
           <g id="features">
