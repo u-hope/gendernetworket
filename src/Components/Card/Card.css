@@ -48,7 +48,7 @@
     background-color: #D1D3D4;
     display: grid;
     margin: auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
     box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     -webkit-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     -moz-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
