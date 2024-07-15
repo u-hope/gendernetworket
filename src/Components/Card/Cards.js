@@ -7,14 +7,19 @@ function Cards(props) {
   const [organizations, setOrganizations] = useState([]);
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("");
+  const [dataLoaded, setDataLoaded] = useState(false);
   const [emptySearch, setEmptySearch] = useState("");
 
   useEffect(() => {
       axios.get("https://gendernetworkethiopia-api.onrender.com/api/data")
           .then(response => {
               setOrganizations(response.data);
+              setDataLoaded(true);
           })
-          .catch(error => console.error('Error fetching notes:', error));
+          .catch(error => {
+            console.error('Error fetching notes:', error);
+            setDataLoaded(false);
+        });
   }, []);
 
   const handleSearch = (event) => {
@@ -77,7 +82,8 @@ function Cards(props) {
           </div>
 
           <div className='cardSection'>
-              {filteredOrganizations.length > 0 ? (
+          {dataLoaded ? ( 
+            filteredOrganizations.length > 0 ? (
                   records.map(organization => (
                       <div className="cardContainer" key={organization.id}>
                           <div className='cardLeft'>
@@ -127,7 +133,15 @@ function Cards(props) {
                           &nbsp; {search}
                       </span>
                   </div>
-              )}
+              )
+          ):(
+            <div className="loader" style={{ margin:"auto auto"}}>
+            <span style={{color:"#00859B", fontSize:"5vh",fontWeight:"700"}}>Loading</span>
+            <div className='dot'></div>
+            <div className='dot'></div>
+            <div className='dot'></div>
+        </div>
+          )}
           </div>
 
           <Pagination
