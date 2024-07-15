@@ -43,10 +43,11 @@
 .cardContainer {
     width: 20vw;
     height: 25vh;
-    padding: 2vh;
+     padding: 2rem;
     border-radius: 8px;
     background-color: #D1D3D4;
     display: grid;
+    margin: auto auto;
     grid-template-columns: 1fr 1fr;
     box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     -webkit-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
@@ -58,13 +59,13 @@
     position: absolute;
     background-color: #91C7D1;
     width: 25vw;
-    height: 25vh;
+    height: 30vh;
     padding: 1.5vw;
     border-radius: 8px;
     box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     -webkit-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     -moz-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
-    overflow: auto;
+    overflow-y:auto;
     display: none;
     z-index: 10;
 

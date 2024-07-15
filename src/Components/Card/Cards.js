@@ -106,7 +106,9 @@ function Cards(props) {
                                       <span className='cardText'>{organization.region}</span>
                                   </div>
                               </div>
-                              <div className='cardExpanded'>
+                             
+                          </div>
+                          <div className='cardExpanded'>
                                   <div className='cardHomeName'>
                                       <span className='cardLable'>Mission:</span>
                                       <span className='cardMission'>{organization.mission}</span>
@@ -123,7 +125,6 @@ function Cards(props) {
                                     Email: <a>{organization.email}</a>
                                  </div>
                               </div>
-                          </div>
                       </div>
                   ))
               ) : (
