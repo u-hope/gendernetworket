@@ -82,6 +82,7 @@
 
 .cardRight {
     display: grid;
+    font-size: medium;
     grid-template-rows: 1fr 2fr;
 }
 
@@ -110,19 +111,11 @@
 
 .cardName {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr;
 }
 
-.cardRegion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.cardText {
-    padding-left: 1px;
-}
 .cardLable {
-    font-size: large;
     font-weight: 600;
     color: #172730;
 }
