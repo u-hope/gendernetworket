@@ -56,7 +56,7 @@ svg {
     display: flex;
     font-size: larger;
     font-weight: 600;
-    color: #5c5c5c;
+    color: rgba(76, 115, 173, 0.514);
 }
 .mapRegionLable:hover{
     color: #04404b;
