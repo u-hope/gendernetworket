@@ -2,7 +2,7 @@ import Map from '../../Components/Maps/Map';
 import NavBar from '../../Components/NavBar/Navbar';
 import logoImg from '../../Img/logo.png';
 import homeImg from '../../Img/home.png'
-import Header from '../Header/Header';
+import Header from '../Header/Headers';
 import About from '../about/about';
 import Parallex from '../../Components/parallex/parallex';
 import './home.css';
