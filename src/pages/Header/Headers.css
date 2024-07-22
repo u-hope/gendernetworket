@@ -34,7 +34,7 @@
 .parallax_5{
     height: 85%;
     width: 70%;
-    margin-left: -65px;
+    margin-left: -75px;
     align-self:end; 
 }
 .parallax_6{
@@ -57,7 +57,7 @@
     height: 40%;
     align-self:center ;
     justify-self:end;
-
+    margin: 0 -3%;
 }
 
 
