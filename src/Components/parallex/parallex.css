@@ -2,7 +2,8 @@
     /* background-color: #163839; */
     height:60vh;
     top: 100vh;
-    background-image: url('../../Img/genderImg.jfif');
+    /* background-image: url('../../Img/genderImg.jfif'); */
+    background-image: linear-gradient(rgba(24, 177, 204, 0.11), rgba(24, 177, 204, 0.11)), url('../../Img/genderImg.jfif');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

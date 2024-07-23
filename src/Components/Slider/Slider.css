@@ -20,12 +20,12 @@
 
 
 .top{
-    animation: 8s slider infinite linear;
+    animation: 15s slider infinite linear;
 }
 .bottom{
     display: flex;
     flex-direction: row-reverse;
-    animation: 8s sliderB infinite linear;
+    animation: 15s sliderB infinite linear;
 
 }
 .top:hover {

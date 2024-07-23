@@ -53,7 +53,6 @@ const Slider = ()=>{
                 <CardSlide name={"EGPA"} img={egpa}/>  
                 <CardSlide name={"Gender Action"} img={genderland}/>
                 <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
-                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
                 <CardSlide name={"MSI"} img={msi}/>
                 <CardSlide name={"Ministry of Peace"} img={peace}/>
                 <CardSlide name={"United Nation"} img={un}/>
@@ -79,7 +78,6 @@ const Slider = ()=>{
                 <CardSlide name={"EGPA"} img={egpa}/>  
                 <CardSlide name={"Gender Action"} img={genderland}/>
                 <CardSlide name={"Gender Equality Ethiopia"} img={geng}/>
-                <CardSlide name={"Men Engage Ethiopia"} img={moa}/>
                 <CardSlide name={"MSI"} img={msi}/>
                 <CardSlide name={"Ministry of Peace"} img={peace}/>
                 <CardSlide name={"United Nation"} img={un}/>

@@ -59,14 +59,13 @@
     --parallax-speed:-5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 10vh;
-    padding-left: 10vh;
+    /* padding-top: 10vh;
+    padding-left: 10vh; */
     width: 40%;
     height: 40%;
     align-self:center ;
     justify-self:end;
-    margin: 0 -3%;
+    margin: -15% -3%;
 }
 
 
@@ -91,12 +90,14 @@
     justify-content: center;
     align-items: center;
     margin: auto auto;
+    margin-left:25%;
     background-color: #00859B;
     height: 7vh;
     width: 12vw;
     text-decoration: none;
     border-radius: 5px;
     color: white;
+
 }
 .headerButton:hover{
     border: #00859B solid;

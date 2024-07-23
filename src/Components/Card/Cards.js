@@ -60,6 +60,7 @@ function Cards(props) {
           </h1>
           <div className='searchSortContainer'>
               <div className='searchMain'>
+                 <div className='searchSort'>
                   <select
                       className="profileInput"
                       name="sort"
@@ -70,7 +71,8 @@ function Cards(props) {
                       <option value="name">Private</option>
                       <option value="region">Non Profit</option>
                   </select>
-
+                  </div>
+                  <div className='searchSearch'>   
                   <input
                       type='text'
                       className='search'
@@ -78,6 +80,7 @@ function Cards(props) {
                       onChange={handleSearch}
                       value={search}
                   />
+                  </div>
               </div>
           </div>
 
@@ -98,22 +101,22 @@ function Cards(props) {
 
                               <div className='cardBottom'>
                                   <div className='cardName'>
-                                      <span className='cardLable'>Email:</span>
-                                      <span className='cardText'>{organization.email}</span>
-                                  </div>
-                                  <div className='cardName'>
                                       <span className='cardLable'>Region:</span>
                                       <span className='cardText'>{organization.region}</span>
+                                  </div>
+                                  <div className='cardName'>
+                                      <span className='cardLable'>Email:</span>
+                                      <span className='cardText'>{organization.email}</span>
                                   </div>
                               </div>
                              
                           </div>
                           <div className='cardExpanded'>
-                                  <div className='cardHomeName'>
+                                  <div className='cardHomeName' style={{marginBottom:"8px"}}> 
                                       <span className='cardLable'>Mission:</span>
                                       <span className='cardMission'>{organization.mission}</span>
                                   </div>
-                                  <div className='cardHoverName'>
+                                  <div className='cardHoverName' style={{marginBottom:"8px"}}>
                                       <span className='cardLable'>Vision:</span>
                                       <span className='cardMission'>{organization.vision}</span>
                                   </div>
@@ -122,7 +125,7 @@ function Cards(props) {
                                     <br/>
                                     Contact: <span>{organization.contact}</span>
                                     <br/>
-                                    Email: <a>{organization.email}</a>
+                                    Email: <a style={{color:"#fff"}}>{organization.email}</a>
                                  </div>
                               </div>
                       </div>

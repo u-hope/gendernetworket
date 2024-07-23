@@ -4,6 +4,7 @@
     background:url("../../Img/card_background.png") ;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 2.5vh;
 }
 .cardSection {
     display: grid;
@@ -19,6 +20,7 @@
     display: flex;
     justify-content: right;
     padding-right: 7vw;
+    margin-bottom:-4vh ;
 }
 
 .cardSectionTitle {
@@ -26,9 +28,11 @@
     margin:  0 0;
 }
 .searchMain{
+    width: 90%;
     display: flex;
+    justify-content: space-between;
     float: right;
-    padding: 3vh;
+    padding-top: 3vh;
 }
 .search{
     width: 20vw;
@@ -49,8 +53,8 @@
     display: grid;
     margin: auto auto;
     grid-template-columns: 0.8fr 1fr;
-    box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
-    -webkit-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
+    box-shadow: -5px 19px 23px -5px rgba(0,0,0,0.91);
+    -webkit-box-shadow: -5px 10px 53px -5px rgba(0,0,0,0.91);
     -moz-box-shadow: -5px 19px 53px -5px rgba(0,0,0,0.91);
     position: relative;
 }

@@ -226,6 +226,9 @@ const Map = () => {
           </g>
         
         </svg>
+        <div style={{marginBottom:"80px",marginLeft:"-10vw", display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <p style={{display:"flex", backgroundColor:"#00859B5a", color:"#fff", padding:"10px 10px", width:"15%", justifyContent:"center",alignItems:"center"}}>Click a Region</p>
+        </div>
       </div>
       <div className='mapRight'>
 
