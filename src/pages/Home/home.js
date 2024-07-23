@@ -13,7 +13,11 @@ import Slider from '../../Components/Slider/Slider';
 const Home =() => {
     return(
         <div style={{
-            height:"100vh",scrollSnapType:"y proximity",overflowY:"scroll"
+            height:"100vh",
+            scrollSnapType:"y proximity",
+            overflowY:"scroll",
+            overflowX:"hidden",
+            marginBottom:"0"
         }}>
             <NavBar logoImg={homeImg}/>
             <Header/>

@@ -35,6 +35,7 @@ svg {
     grid-template-rows: 0.5fr 3fr 0.5fr;
     height: 60vh;
     width: 100%;
+    overflow: hidden;
 }
 .mapClicked{
     height: 100%;

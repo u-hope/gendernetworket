@@ -1,8 +1,6 @@
 .header {
     height: 100vh;
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    /* overflow: hidden; */
     clip-path: ellipse(98% 51% at 47% 38%);
     scroll-snap-align: start;
 
@@ -31,7 +29,9 @@
     margin: 10% 28%;
     transform: rotate(-8deg);
 }
+
 .parallax_5{
+    --parallax-speed:0;
     height: 85%;
     width: 70%;
     margin-left: -75px;
@@ -45,9 +45,18 @@
 }
 .headerCover > * {
     grid-area: stack;
+    animation: parallaxAnim linear;
+    animation-timeline: scroll();
+}
+
+@keyframes parallaxAnim{
+    to{
+        transform: translateY(calc(var(--parallax-speed) * 100px));
+    }
 }
 
 .headerLeft {
+    --parallax-speed:-5;
     display: flex;
     flex-direction: column;
     justify-content: center;
