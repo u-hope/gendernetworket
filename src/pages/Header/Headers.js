@@ -11,46 +11,47 @@ const Headers = () => {
   
 
     return (
-        <div className="header">
+        <div className="header" >
             <div className='headerCover' >
-                <img
+                {/* <img
                     src={backImg}
                     alt='background_1'
                   
                     className='parallax parallax_1'
-                />
+                /> */}
                 <img
                     src={mask}
-                    alt='background_1'
+                    alt='background_2'
                     className='parallax parallax_2'
                 />
                 <img
                     src={heroShape}
-                    alt='background_1'
+                    alt='background_3'
                     className='parallax parallax_3'
                 />
                 <img
                     src={elements}
-                    alt='background_1'
+                    alt='background_4'
                     className='parallax parallax_4'
                 />
                 <img
                     src={people}
-                    alt='background_1'
+                    alt='background_5'
                     className='parallax parallax_5'
                 />
                 <img
                     src={triangle}
-                    alt='background_1'
+                    alt='background_6'
                     className='parallax parallax_6'
                 />
+                <div className='smallDevice'></div>
                 <div className='headerLeft'>
                     <span className='headerTopText'>
                         We believe in fostering a diverse and inclusive
-                        <br /> community where individuals of all gender can
-                        <br /> connect, collaborate and thrive. Together, let's
-                        <br /> break barriers and create a more equitable
-                        <br /> future.
+                         community where individuals of all gender can
+                         connect, collaborate and thrive. Together, let's
+                         break barriers and create a more equitable
+                         future.
                     </span>
                     <span className='headerText'>
                         Equal Representation, Equal Society.

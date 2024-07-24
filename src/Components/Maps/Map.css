@@ -17,7 +17,7 @@ svg {
   }
 .map{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 5fr 3fr;     
     overflow: hidden;  
@@ -69,6 +69,15 @@ svg {
     font-size: xx-large;
     color: #00859B;
 }
+.mapRegionButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    height: 7vh;
+    width: 12vh;
+    font-size: 2vh;
+}
 
 
 /* 
@@ -83,14 +92,31 @@ svg {
 /* Small Devices (Phones)  */
 @media (max-width: 767px) {
     .map {
-        height: 90vh;
+        height: auto;
         grid-template-columns: none;
-        grid-template-rows: 1fr 1.5fr;
+        grid-template-rows: 0.8fr 1fr;
       }
     .svg{
         width: 100%;
         height: auto;
     }
+    .mapRight{
+        display: flex;
+        padding: 3vw;
+        text-align: left;
+        float: left;
+        display: grid;
+        grid-template-rows: 0.5fr 3fr 0.5fr;
+        /* height: 60vh; */
+        width: 100%;
+        overflow: hidden;
+    }
+    .mapRegionButton{
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+    }
+    
 
 }
 

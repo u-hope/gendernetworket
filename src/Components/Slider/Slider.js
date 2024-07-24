@@ -11,7 +11,6 @@ import egpa from '../../Img/gender/egpa.png';
 import gen from '../../Img/gender/gen.png';
 import genderland from '../../Img/gender/genderland.jpg';
 import geng from '../../Img/gender/geng.jpg';
-import moa from '../../Img/gender/moa.png';
 import msi from '../../Img/gender/msi.png';
 import peace from '../../Img/gender/peace.jpg';
 import un from '../../Img/gender/un.png';
@@ -27,7 +26,6 @@ import usaid from '../../Img/gender/usaid.png';
 const Slider = ()=>{
     
   const [respo, setRespo] = useState([]);
-//   const [organization, setOrganization] = useState([]);
 
     useEffect(() => {
         axios.get("https://gendernetworkethiopia-api.onrender.com/api/data")

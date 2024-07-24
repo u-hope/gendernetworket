@@ -49,8 +49,8 @@ const Map = () => {
           stroke-width=".5"
           version="1.2"
           viewBox="0 0 1000 774"
-          width="100%"
-          height="100%"
+          width="95%"
+          height="95%"
           xmlns="http://www.w3.org/2000/svg">
 
           <g id="features">
@@ -227,7 +227,7 @@ const Map = () => {
         
         </svg>
         <div style={{marginBottom:"80px",marginLeft:"-10vw", display:"flex",justifyContent:"center",alignItems:"center"}}>
-        <p style={{display:"flex", backgroundColor:"#00859B5a", color:"#fff", padding:"10px 10px", width:"15%", justifyContent:"center",alignItems:"center"}}>Click a Region</p>
+        <p style={{display:"flex", color:"#5c5c5c",fontStyle:"italic", padding:"10px 10px", width:"15%", justifyContent:"center",alignItems:"center"}}>Click a Region</p>
         </div>
       </div>
       <div className='mapRight'>
@@ -257,15 +257,7 @@ const Map = () => {
           </div>
         ))}
         </div>
-        <button style={{
-          display:"flex",
-          justifyContent:"center",
-          alignItems:"center",
-          margin:"auto auto",
-          height: "7vh",
-          width: "12vw",
-          fontSize:"2vh"
-        }} className='mapRegionButton' onClick={onExport}>Download File</button>
+        <button  className='mapRegionButton' onClick={onExport}>Download File</button>
       </div>
 
     </div>

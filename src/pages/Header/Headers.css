@@ -3,7 +3,9 @@
     display: grid;
     clip-path: ellipse(98% 51% at 47% 38%);
     scroll-snap-align: start;
-
+    background-image: url('../../Img/deepBack.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .headerCover{
     display: grid;
@@ -60,13 +62,11 @@
     --parallax-speed:-5;
     display: flex;
     flex-direction: column;
-    /* padding-top: 10vh;
-    padding-left: 10vh; */
-    width: 40%;
+    width: 32%;
     height: 40%;
     align-self:center ;
     justify-self:end;
-    margin: -15% -3%;
+    margin: -15% 5%;
 }
 
 
@@ -110,3 +110,101 @@
     box-shadow: -3px -1px 28px 0px rgba(0, 0, 0, 0.432);
 }
 
+
+.smallDevice{
+    visibility: hidden;
+}
+
+
+/* Medium Devices (Tablets) */
+@media (max-width: 991px) {
+    .header {
+        grid-template-columns: 1fr;
+        height: auto;
+        background-size: 100vw 50vh;
+        background-position: center top;
+    }
+
+    .headerLeft {
+        margin: 10vh 0;
+    }
+
+    .headerText {
+        font-size: 1.5rem;
+        margin-bottom: 2vh;
+    }
+
+    .headerButton {
+        height: 6vh;
+        width: 30vw;
+        padding-top: 3vh;
+        margin-left: 0;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 767px) {
+    .header{ 
+        height: 100vh;
+    display: grid;
+    clip-path: ellipse(98% 51% at 47% 38%);
+    scroll-snap-align: start;
+}
+
+    .headerText {
+        font-size: 25px;
+        margin: auto auto;
+    }
+    .headerTopText{
+        font-weight: 400;
+    }
+    .smallDevice {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(12, 103, 119, 0.199);
+    }
+    .headerLeft{
+        --parallax-speed:-5;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 50%;
+        align-self:center ;
+        justify-self:start;
+        margin: 15% 3%;
+    }
+
+    .headerButton {
+        height: 3vh;
+        width: 30vw;
+        padding: 2vh;
+        margin-left: 0;
+        align-self: center;
+    }
+    .parallax_2{
+        height: 100%;
+        width: 70%;
+        margin: -12% 15%;
+    
+    }
+    .parallax_3{
+        height: 60%;
+        width: 100%;
+        align-self: end;
+    }
+    .parallax_4{
+        width: 60%;
+        margin: 10% 28%;
+        transform: rotate(-8deg);
+    }
+    
+    .parallax_5{
+        --parallax-speed:0;
+        height: 75%;
+        width: 100%;
+    }
+    .parallax_6{
+        visibility: hidden;
+    }
+}

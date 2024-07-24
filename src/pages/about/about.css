@@ -110,28 +110,28 @@
     transition: opacity 0.3s ease-in 0.4s;
 }
 .One{
-    background-image: url('../../Img/a1.jpg');
+    background-image: url('../../Img/a1.png');
    
     
 }
 .Two{
-    background-image: url('../../Img/a2.jpg');
+    background-image: url('../../Img/a2.png');
     
    
     
 }
 .Three{
-    background-image: url('../../Img/a3.jpg');
+    background-image: url('../../Img/a3.png');
    
     
 }
 .Four{
-    background-image: url('../../Img/a4.jpg');
+    background-image: url('../../Img/a4.png');
    
     
 }
 .Five{
-    background-image: url('../../Img/a5.jpg');
+    background-image: url('../../Img/a5.png');
    
     
 }
