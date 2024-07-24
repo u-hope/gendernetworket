@@ -38,6 +38,7 @@
     align-self:end; 
 }
 .parallax_6{
+    --parallax-speed:-15;
     margin-top: 4%;
     transform: rotate(210deg);
     max-height:90% ;
