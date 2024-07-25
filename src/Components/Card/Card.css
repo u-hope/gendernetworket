@@ -191,8 +191,8 @@
 /* Small Devices (Phones) */
 @media (max-width: 767px) {
     .cardSection {
-        padding: 3vh 0;
-        text-align: center;
+        padding: 3vh 1vh;
+        text-align: left;
     }
 
     .cardContainer {
@@ -212,5 +212,11 @@
 
     .cardLable {
         font-size: 1rem;
+    }
+    .searchSort{
+        visibility: hidden;
+    }
+    .searchSearch input{
+        width:100%;
     }
 }
