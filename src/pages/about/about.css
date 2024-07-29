@@ -1,10 +1,8 @@
 .about_main{
-    /* background-color: #a8fcff; */
     width: 100%;
     height:auto;
     scroll-snap-align: start;
     transform: translateZ(0);
-    /* position: relative; */
     display: grid;
     grid-template-rows: 1.5fr 3fr;
     margin-bottom: 150px;
@@ -158,12 +156,10 @@
 
 @media (max-width: 720px) {
     .about_main{
-        /* background-color: #a8fcff; */
         width: 100%;
         height:auto;
-        scroll-snap-align: start;
+        scroll-snap-align: none;
         transform: translateZ(0);
-        /* position: relative; */
         display: grid;
         grid-template-rows: 1fr 1.2fr;
         margin-bottom: 1px;

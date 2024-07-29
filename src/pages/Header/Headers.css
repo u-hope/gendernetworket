@@ -144,10 +144,11 @@
 /* Small Devices (Phones) */
 @media (max-width: 767px) {
     .header{ 
-        height: 100vh;
+    height: 100vh;
     display: grid;
     clip-path: ellipse(98% 51% at 47% 38%);
-    scroll-snap-align: start;
+    scroll-snap-align: none;
+    scroll-snap-type: none;
 }
 
     .headerText {
