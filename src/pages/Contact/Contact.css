@@ -7,8 +7,8 @@
 }
 .contactLeft img{
     margin-left: 3vw ;
-    height: 100%;
-    width:100%;
+    height: 80px;
+    width:100px;
 }
 .email{
     display: flex;
