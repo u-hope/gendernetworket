@@ -190,6 +190,10 @@
 
 /* Small Devices (Phones) */
 @media (max-width: 767px) {
+    .cardContainerSpace{
+        
+    scroll-snap-align: none;
+    }
     .cardSection {
         padding: 3vh 1vh;
         text-align: left;

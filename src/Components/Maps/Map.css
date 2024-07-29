@@ -98,6 +98,7 @@ svg {
         margin-top: 1px;
         grid-template-columns: none;
         grid-template-rows: 0.8fr 1fr;
+        scroll-snap-align: none; 
       }
     .svg{
         width: 100%;

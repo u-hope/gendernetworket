@@ -54,3 +54,9 @@
 p {
   font-family: helvetica, arial, sans serif;
 }
+@media (width:767px) {
+    .sliderTop{
+        
+    scroll-snap-align: none;
+    }
+}
