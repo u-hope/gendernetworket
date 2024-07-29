@@ -34,9 +34,8 @@
 
 .parallax_5{
     --parallax-speed:0;
-    height: 85%;
-    width: 70%;
-    margin-left: -75px;
+    height: 100%;
+    width: 100%;
     align-self:end; 
 }
 .parallax_6{
@@ -214,7 +213,7 @@
     .parallax_5{
         --parallax-speed:0;
         height: 75%;
-        width: 200%;
+        width: 170%;
     }
     .parallax_6{
         visibility: hidden;
