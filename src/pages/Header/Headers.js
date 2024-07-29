@@ -6,6 +6,7 @@ import elements from '../../Img/elements.png';
 import people from '../../Img/people.png';
 import triangle from '../../Img/triangle.png';
 import { Link } from 'react-router-dom';
+import NavBar from '../../Components/NavBar/Navbar';
 
 const Headers = () => {
   

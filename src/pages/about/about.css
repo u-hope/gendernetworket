@@ -165,14 +165,29 @@
         transform: translateZ(0);
         /* position: relative; */
         display: grid;
-        grid-template-rows: 1.5fr 2fr;
+        grid-template-rows: 1fr 1.2fr;
         margin-bottom: 1px;
     }
+
     .aboutContainer{
-        width: 100%;
+    margin-top: 2vw;
+     width: 100%;
     }
-    .aboutImg:nth-of-type(4),
-    .aboutImg:nth-of-type(5) {
-        display: none;
+    .aboutImg{
+        height: 30vh;
     }
+    .aboutImg p{
+        
+    font-size: 22px;
+    font-weight: 200;
+    }
+    .about_title{
+        font-size: 35px;
+    }
+    .about_body{
+        font-size: 20px;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+  
 }

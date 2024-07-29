@@ -22,3 +22,9 @@
 .header_motto{
     color:#00859B;
 }
+
+@media  (max-width:767px){
+    .parallex_main{
+        scroll-snap-align: none;
+    }
+}

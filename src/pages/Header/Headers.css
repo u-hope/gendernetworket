@@ -164,7 +164,11 @@
         
     }
     .headerTopText{
-        font-weight: 400;
+        font-weight: 300;
+        font-size: 25px;
+        /* color: #00849b; */
+        color: #fff;
+        text-align:center;
     }
     .smallDevice {
         visibility: visible;
@@ -192,7 +196,7 @@
     }
     .parallax_2{
         height: 100%;
-        width: 70%;
+        width: 100%;
         margin: -12% 15%;
     
     }
@@ -210,7 +214,7 @@
     .parallax_5{
         --parallax-speed:0;
         height: 75%;
-        width: 100%;
+        width: 200%;
     }
     .parallax_6{
         visibility: hidden;

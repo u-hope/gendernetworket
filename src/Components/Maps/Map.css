@@ -114,6 +114,12 @@ svg {
         width: 100%;
         overflow: hidden;
     }
+    .mapHeader{
+        font-size: x-large;
+    }
+    .mapLable{
+        font-size:large;
+    }
     .mapRegionButton{
         height: 30px;
         width: 200px;
