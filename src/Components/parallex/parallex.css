@@ -1,8 +1,4 @@
 .parallex_main{
-    /* background-color: #163839; */
-    height:60vh;
-    top: 100vh;
-    /* background-image: url('../../Img/genderImg.jfif'); */
     background-image: linear-gradient(rgba(24, 177, 204, 0.11), rgba(24, 177, 204, 0.11)), url('../../Img/genderImg.jfif');
     background-size: cover;
     background-attachment: fixed;
@@ -13,18 +9,27 @@
 }
 .parallex_bottom{
     height: 100%;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(18px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.header_motto{
+.parallax_name{
+    font-size:"35px";
+    color:#5c5c5c
+}
+.parallax_motto{
     color:#00859B;
+    font-size:"2.5vh"; 
+    font-weight:"200";
 }
 
 @media  (max-width:767px){
     .parallex_main{
         scroll-snap-align: none;
+    }
+    .parallax_motto{
+        font-size: 2vh;
     }
 }

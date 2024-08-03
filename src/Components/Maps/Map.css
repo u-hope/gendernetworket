@@ -97,7 +97,7 @@ svg {
         height: auto;
         margin-top: 1px;
         grid-template-columns: none;
-        grid-template-rows: 0.8fr 1fr;
+        grid-template-rows: auto auto;
         scroll-snap-align: none; 
       }
     .svg{

@@ -1,25 +1,17 @@
 import './Headers.css';
-import backImg from '../../Img/deepBack.png';
 import mask from '../../Img/mask.png';
 import heroShape from '../../Img/hero_shape.png';
 import elements from '../../Img/elements.png';
 import people from '../../Img/people.png';
 import triangle from '../../Img/triangle.png';
 import { Link } from 'react-router-dom';
-import NavBar from '../../Components/NavBar/Navbar';
 
 const Headers = () => {
-  
 
     return (
         <div className="header" >
-            <div className='headerCover' >
-                {/* <img
-                    src={backImg}
-                    alt='background_1'
-                  
-                    className='parallax parallax_1'
-                /> */}
+            <div className='headerCover'>
+               
                 <img
                     src={mask}
                     alt='background_2'

@@ -55,7 +55,7 @@ function Cards(props) {
 
   return (
       <div className='cardContainerSpace'>
-          <h1 className='cardSectionTitle' style={{fontSize:"5vh", fontWeight:"750",color:" #00859B"}}>
+          <h1 className='cardSectionTitle' style={{fontWeight:"750",color:" #00859B"}}>
               Organizations
           </h1>
           <div className='searchSortContainer'>

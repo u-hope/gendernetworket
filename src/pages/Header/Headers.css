@@ -6,6 +6,8 @@
     background-image: url('../../Img/deepBack.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
 }
 .headerCover{
     display: grid;
@@ -144,7 +146,7 @@
 /* Small Devices (Phones) */
 @media (max-width: 767px) {
     .header{ 
-    height: 100vh;
+    height: 70vh;
     display: grid;
     clip-path: ellipse(98% 51% at 47% 38%);
     scroll-snap-align: none;
@@ -152,6 +154,7 @@
 }
 
     .headerText {
+        display: none;
         font-size: 20px;
         text-align: center;
         color: #00849b;
@@ -165,16 +168,20 @@
     }
     .headerTopText{
         font-weight: 300;
-        font-size: 25px;
-        /* color: #00849b; */
+        font-size: 20px;
         color: #fff;
-        text-align:center;
+        text-shadow:
+        -0.5px -0.5px 0 #000000a9,
+        0.5px -0.5px 0 #000000a9,
+        -0.5px 0.5px 0 #000000a9,
+        0.5px 0.5px 0 #000000a9;
+        text-align:justify;
     }
     .smallDevice {
         visibility: visible;
         width: 100%;
         height: 100%;
-        background-color: rgba(12, 103, 119, 0.466);
+        background-color: rgba(12, 103, 119, 0.192);
     }
     .headerLeft{
         --parallax-speed:-5;

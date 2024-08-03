@@ -43,5 +43,13 @@
 @media (max-width: 767px) {
     .contactLeft img{
         display: none;
+       }
+    .contactRight{
+        display: flex;
+        width: 100%;
+        margin: 0 15px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:start ;
     }
 }

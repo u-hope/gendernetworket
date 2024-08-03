@@ -56,7 +56,9 @@ p {
 }
 @media (width:767px) {
     .sliderTop{
-        
     scroll-snap-align: none;
+    }
+    .sliderContainer{
+        height: 10vh;
     }
 }

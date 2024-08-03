@@ -26,6 +26,7 @@
 .cardSectionTitle {
     text-align: right;
     margin:  0 0;
+    font-size:"5vh"
 }
 .searchMain{
     width: 90%;
@@ -198,11 +199,17 @@
         padding: 3vh 1vh;
         text-align: left;
     }
-
+    .cardSectionTitle{
+        font-size:"35px"
+    }
     .cardContainer {
         width: 80vw;
         padding: 2vh;
         margin: 2vw;
+        box-shadow: -5px 19px 23px -5px rgba(0, 0, 0, 0.315);
+        -webkit-box-shadow: -5px 10px 53px -5px rgba(0, 0, 0, 0.315);
+        -moz-box-shadow: -5px 19px 53px -5px rgba(0, 0, 0, 0.315);
+
     }
 
     .cardExpanded {

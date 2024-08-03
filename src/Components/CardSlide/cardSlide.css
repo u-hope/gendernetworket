@@ -2,6 +2,9 @@
     width: 50%;
     height: 50%;
     margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cardSlideImg img{
     width: 80px;
@@ -13,4 +16,10 @@
 }
 .cardSlideName h2{
     font-size: 2vh;
+    text-align: center;
+}
+@media (max-width:767px){
+    .cardSlideName h2{
+        font-size: 12px;
+    }
 }

@@ -24,6 +24,7 @@
     padding-left: 10vw;
     padding-right: 10vw;
     font-size: 3vh;
+    text-align:"center";
 }
 .about_bottom{
     display: flex;
@@ -162,7 +163,7 @@
         transform: translateZ(0);
         display: grid;
         grid-template-rows: 1fr 1.2fr;
-        margin-bottom: 1px;
+        margin-bottom: 3vh;
     }
 
     .aboutContainer{
@@ -171,6 +172,7 @@
     }
     .aboutImg{
         height: 30vh;
+        border-radius: 20px;
     }
     .aboutImg p{
         
@@ -181,9 +183,10 @@
         font-size: 35px;
     }
     .about_body{
-        font-size: 20px;
+        font-size: 16px;
         padding-left: 7vw;
         padding-right: 7vw;
+        text-align: justify;
     }
   
 }
