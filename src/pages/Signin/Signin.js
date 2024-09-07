@@ -1,7 +1,7 @@
 import './signin.css';
 import React, {useState} from 'react';
 import { signin, authenticate } from '../../backend';
-import { Navigate } from 'react-router-dom'; 
+import { Navigate, Link } from 'react-router-dom'; 
 
 // Signin component for the login form
 export function Signin(){
@@ -83,7 +83,7 @@ export function Signin(){
                 </div>
                 {/* Message for redirection to signup */}
                 <div className='login-message'>
-                <center><p className='login_redirect mt-2'>Don't have an account?<b><a href='/signup'> Signup here</a></b></p></center>
+                <center><p className='login_redirect mt-2'>Don't have an account?<b><Link to='/signup'> Signup here</Link></b></p></center>
                 </div>
             </div>
         </div>

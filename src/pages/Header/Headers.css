@@ -78,7 +78,6 @@
     width: 100%;
     background-color: transparent;
     margin-bottom: 6.9vh;
-    
     padding-left: 2vh;
 }
 .headerTopText{
@@ -155,26 +154,11 @@
 
     .headerText {
         display: none;
-        font-size: 20px;
-        text-align: center;
-        color: #00849b;
-        /* color: white; */
-  text-shadow:
-    -0.5px -0.5px 0 #000000a9,
-    0.5px -0.5px 0 #000000a9,
-    -0.5px 0.5px 0 #000000a9,
-    0.5px 0.5px 0 #000000a9;
-        
     }
     .headerTopText{
         font-weight: 300;
         font-size: 20px;
-        color: #fff;
-        text-shadow:
-        -0.5px -0.5px 0 #000000a9,
-        0.5px -0.5px 0 #000000a9,
-        -0.5px 0.5px 0 #000000a9,
-        0.5px 0.5px 0 #000000a9;
+        color: #00849b;
         text-align:justify;
     }
     .smallDevice {
@@ -187,19 +171,18 @@
         --parallax-speed:-5;
         display: flex;
         flex-direction: column;
-        width: 70%;
-        height: 50%;
+        width: 80%;
+        height: 60%;
         align-self:center ;
         justify-self:center;
-        margin: 15% 3%;
     }
 
     .headerButton {
         height: 3vh;
         width: 50%;
         padding: 2vh;
-        align-self: center;
         margin: auto auto;
+        margin-top: -2.5vh;
     }
     .parallax_2{
         height: 100%;

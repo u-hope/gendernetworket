@@ -1,7 +1,7 @@
 import './signup.css';
 import React, {useState} from "react";
 import NavBar from '../../Components/NavBar/Navbar';
-import logoImg from '../../Img/logo.png';
+import logoImg from '../../Img/home.png';
 import { signup } from "../../backend";
 import { Link } from "react-router-dom";
 
@@ -19,6 +19,7 @@ function Signup() {
         region:"", 
         orgtype:"",
         intervention:"",
+        logo:null,
         error: "",
         loading: false,
         success: false,
@@ -30,6 +31,10 @@ const { name, email, password, mission, vision, contact, region, orgtype, interv
 const handleChange = name => event => {
     setFormValues({ ...formValues, error: false, [name]: event.target.value });
 }
+//Handles changes in the file upload image form 
+const handleFileChange = (e) => {
+    setFormData((prev) => ({ ...prev, logo: e.target.files[0] }));
+};
 
 // Submits the form data to the backend
 const onSubmit = async event => {
@@ -124,6 +129,11 @@ const successMessage = () => {
                 <div className='form-group'>
                     <label htmlFor="password">Password</label>
                     <input type="password" id="password" name="password" onChange={handleChange("password")} required/>
+                </div>
+                {/*Imput field for the logo */}
+                <div className='form-group'>
+                    <label htmlFor="password">Upload Logo</label>
+                    <input type="file" name="logo" onChange={handleFileChange} required />
                 </div>
                 {/* Signup button */}
                 <div className="form-group-button">

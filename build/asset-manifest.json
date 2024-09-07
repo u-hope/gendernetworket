@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12f24f7a.css",
+    "main.js": "/static/js/main.b01ca3c4.js",
+    "static/media/people.png": "/static/media/people.eb8bc73c94b6f74d8275.png",
+    "static/media/deepBack.png": "/static/media/deepBack.a86ca6d4039068ac1f7b.png",
+    "static/media/a5.png": "/static/media/a5.44dc3d3ae554475214fc.png",
+    "static/media/card_background.png": "/static/media/card_background.892ebac6d67cbd81afef.png",
+    "static/media/a1.png": "/static/media/a1.be65c464974451b70ebf.png",
+    "static/media/emailIcon.png": "/static/media/emailIcon.e3cd47108efcecf6f0c4.png",
+    "static/media/Ethiopia_background.png": "/static/media/Ethiopia_background.f383d0d563c71d106be0.png",
+    "static/media/a2.png": "/static/media/a2.9fd432f80cad30288126.png",
+    "static/media/a3.png": "/static/media/a3.e1b3aa36bc5c32d15fab.png",
+    "static/media/a4.png": "/static/media/a4.69aad715021b4e970231.png",
+    "static/media/genderImg.jfif": "/static/media/genderImg.441284c67005916d2990.jfif",
+    "static/media/hero_shape.png": "/static/media/hero_shape.6ef20b6cf8e1ae925952.png",
+    "static/media/gizLogo.png": "/static/media/gizLogo.be3bd04b66b37723af64.png",
+    "static/media/signup.jpg": "/static/media/signup.fccba088087209c93257.jpg",
+    "static/media/phoneIcon.png": "/static/media/phoneIcon.36655eac4015e82e8da2.png",
+    "static/media/mask.png": "/static/media/mask.4d1fc98f66524ea624df.png",
+    "static/media/triangle.png": "/static/media/triangle.4f859ef0261018031ae7.png",
+    "static/media/home.png": "/static/media/home.0193d2cc44f1452636f9.png",
+    "static/media/user.png": "/static/media/user.a6143582309785dca610.png",
+    "static/media/genderland.jpg": "/static/media/genderland.67a4478bb9411e009e40.jpg",
+    "static/media/elements.png": "/static/media/elements.39e5d6474f2a1a111113.png",
+    "static/media/ata.png": "/static/media/ata.6717541f3866d0794a19.png",
+    "static/media/geng.jpg": "/static/media/geng.2869d21375114f2129fe.jpg",
+    "static/media/peace.jpg": "/static/media/peace.b94471f6095cdd7ed7f1.jpg",
+    "index.html": "/index.html",
+    "main.12f24f7a.css.map": "/static/css/main.12f24f7a.css.map",
+    "main.b01ca3c4.js.map": "/static/js/main.b01ca3c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12f24f7a.css",
+    "static/js/main.b01ca3c4.js"
+  ]
+}
